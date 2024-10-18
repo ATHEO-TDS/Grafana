@@ -1,0 +1,7 @@
+SELECT 
+  COUNT(t.id) AS Nb_ticket
+FROM 
+  glpi_tickets t
+WHERE 
+  t.status = 1 
+  AND t.is_deleted = 0;
